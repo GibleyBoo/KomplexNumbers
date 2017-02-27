@@ -74,6 +74,24 @@ public class Complex extends Object {
         String number = this.Re() + " + " + this.Im() + "i";
         return number;
     }
+    // Logical operators
+
+    /**
+     * Complex number equivalence
+     *
+     * @param Z The input complex number to compare this to
+     * @return boolean, true if the two complex numbers are
+     *                  equal and false if they are not.
+     */
+    public boolean equals(Complex Z) {
+        Z2 = Z;
+        if (Z1.Re() == Z2.Re()) {
+            if (Z1.Im() == Z2.Im()) {
+                return true;
+            }
+        }
+        return false;
+    }
 
     // Basic arithmetic operations
 
